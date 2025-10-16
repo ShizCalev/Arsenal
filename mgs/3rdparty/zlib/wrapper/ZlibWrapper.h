@@ -1,5 +1,5 @@
 #pragma once
-#include "../zlib.h"
+#include "zlib.h"
 
 class ZlibWrapper {
 public:

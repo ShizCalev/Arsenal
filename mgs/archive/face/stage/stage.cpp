@@ -37,6 +37,6 @@ void Stage::extract(uint16_t pageID, std::string output) {
 
 void Stage::extractAll(std::string output) {
 	for (int i = 0; i < header.numPages; i++) {
-		extract(i, output, "stage", true);
+		extract(i, output, filenameContainsString(filename, "STAGE2") ? "stage2" : "stage", true);
 	}
 }
